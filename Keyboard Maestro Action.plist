@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Pushover Notification</string>
+	<key>Script</key>
+	<string>PushoverNotification.scpt</string>
+	<key>Icon</key>
+	<string>PushoverIcon.png</string>
+	<key>Title</key>
+	<string>Send a notification via Pushover</string>
+	<key>Results</key>
+	<string>None|Window</string>
+	<key>Author</key>
+	<string>Kevin van Haaren [gh@kvmsg.com]</string>
+	<key>URL</key>
+	<string>https://www.vanhaaren.net/</string>
+	<key>Help</key>
+	<string>Select a priority, enter a title, set the HTML formatted notification message. Make sure the PushoverNotification.scpt file contains your Pushover user and application tokens.</string>
+	<key>Parameters</key>
+	<array>
+		<dict>
+			<key>Label</key>
+			<string>Priority</string>
+			<key>Type</key>
+			<string>PopupMenu</string>
+			<key>Default</key>
+			<string>Normal</string>
+			<key>Menu</key>
+			<string>High|Normal|Low|Lowest</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Title</string>
+			<key>Type</key>
+			<string>TokenString</string>
+			<key>Default</key>
+			<string>Notification Title</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Notification Message</string>
+			<key>Type</key>
+			<string>TokenText</string>
+			<key>Default</key>
+			<string>HTML formatted notification message.</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Notification Sound</string>
+			<key>Type</key>
+			<string>PopupMenu</string>
+			<key>Default</key>
+			<string>User Default</string>
+			<key>Menu</key>
+			<!-- Verify these are up to date at the Pushover API website -->
+			<string>User Default|Pushover|Bike|Bugle|Cash Register|Classical|Cosmic|Falling|Gamelan|Incoming|Intermission|Magic|Mechanical|Piano Bar|Siren|Space Alarm|Tug Boat|Alien Alarm|Climb|Persistent|Pushover Echo|Up Down|None</string>
+		</dict>
+	</array>
+</dict>
+</plist>
