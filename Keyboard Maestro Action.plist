@@ -48,6 +48,22 @@
 		</dict>
 		<dict>
 			<key>Label</key>
+			<string>URL Title</string>
+			<key>Type</key>
+			<string>TokenText</string>
+			<key>Default</key>
+			<string>Optional title used for URL.</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>URL</string>
+			<key>Type</key>
+			<string>TokenText</string>
+			<key>Default</key>
+			<string>Optional URL to send with message.</string>
+		</dict>
+		<dict>
+			<key>Label</key>
 			<string>Notification Sound</string>
 			<key>Type</key>
 			<string>PopupMenu</string>
