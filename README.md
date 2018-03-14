@@ -7,7 +7,7 @@ notifications service.
 ## Pushover
 Pushover is a service for sending notifications. It can send them to iOS, Android and desktop computers. Using this plug-in requires you have an account with Pushover. You will need your Pushover user key and an API token. Instructions on creating the API token are below.
 
-Pushover allows (as of 2017-06-30) 7,500 free notifications per month. I assume this is plenty for personal use. It is for me at least.
+Pushover allows (as of 2018-03-14) 7,500 free notifications per month. I assume this is plenty for personal use. It is for me at least.
 
 To create an API token on Pushover:
 * Login to your account
@@ -40,3 +40,6 @@ Once your application is created it will have an API Token listed. Copy that for
 Add "Pushover Notification" action from the "Third Party Plug Ins" action category to your macro. Fill in parameters as desired, you can use Keyboard Maestro variable and other tokens in the text fields.
 
 The Notification Message can use basic HTML formatting. See the [Pushover API documentation](https://pushover.net/api#html) for more information on acceptable HTML commands.
+
+## Current Limitations
+File attachments currently only work, if the given file path contains no spaces and special characters.

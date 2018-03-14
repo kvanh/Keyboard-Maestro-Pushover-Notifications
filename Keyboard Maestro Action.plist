@@ -17,7 +17,7 @@
 	<key>URL</key>
 	<string>https://www.vanhaaren.net/</string>
 	<key>Help</key>
-	<string>Select a priority, enter a title, set the HTML formatted notification message. Make sure the PushoverNotification.scpt file contains your Pushover user and application tokens.</string>
+	<string>Select a priority, enter a title, set the HTML formatted notification message. Optionally you can send along a URL and an attachment (images etc.). Make sure the PushoverNotification.scpt file contains your Pushover user and application tokens.</string>
 	<key>Parameters</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@
 			<key>Label</key>
 			<string>URL Title</string>
 			<key>Type</key>
-			<string>TokenText</string>
+			<string>TokenString</string>
 			<key>Default</key>
 			<string>Optional title used for URL.</string>
 		</dict>
@@ -58,9 +58,17 @@
 			<key>Label</key>
 			<string>URL</string>
 			<key>Type</key>
-			<string>TokenText</string>
+			<string>TokenString</string>
 			<key>Default</key>
 			<string>Optional URL to send with message.</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>File Attachment</string>
+			<key>Type</key>
+			<string>TokenString</string>
+			<key>Default</key>
+			<string>Optional file path of attachment.</string>
 		</dict>
 		<dict>
 			<key>Label</key>
