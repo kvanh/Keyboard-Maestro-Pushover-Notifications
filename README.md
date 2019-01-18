@@ -35,6 +35,7 @@ Once your application is created it will have an API Token listed. Copy that for
         set PO_UserKey to "INSERT_USER_KEY_HERE"
 * Insert your Pushover Application API Key where indicated in the line:
         set PO_Token to "INSERT_API_TOKEN_HERE"
+* Restart the Keyboard Maestro Editor
 
 ## Usage
 Add "Pushover Notification" action from the "Third Party Plug Ins" action category to your macro. Fill in parameters as desired, you can use Keyboard Maestro variable and other tokens in the text fields.
