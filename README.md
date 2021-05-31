@@ -43,13 +43,31 @@ information on creating an application token.
 ```
 
 ## Usage
-Add "Pushover Notification" action from the "Third Party Plug Ins" action category to your macro.
-Fill in parameters as desired, you can use Keyboard Maestro tokens in the text fields.
-The Notification Message can use basic HTML formatting. See the [Pushover API documentation](https://pushover.net/api)
-for more information on acceptable HTML commands.
+
+After installing the Pushover Notification plug-in you can add a notification action
+to a new or existing macro by:
+1. Click the Add Action button
+2. Click the Third Party Plug Ins folder in the action picker.
+3. Double-click, or drag, the Pushover Notification action to your macro.
+4. Fill in the fields as desired
+	- Optional fields you don't use can be left with their default values or have no content.
+5. HTML content in the Notification message supports a limited set of HTML functions.
+		- See [Pushover's HTML Styling notes](https://pushover.net/api#html) for more info.
+6. Pathing for the Image Attachment:
+	- Use Unix style paths
+	- Paths beginning with ~/ will have the ~/ replaced with the path to your home folder.
+	- File must exist and only have an extension of jpg, jpeg, png or gif.
+	- File must be under 2,621,440 bytes
+7. Custom Sounds:
+	- Before using a custom sound, the MP3 of the sound must be uploaded to your Pushover account and given a name
+	- Use the name assigned to the sound in the Custom Sound field
+	- If both a standard Notification Sound and a Custom Sound are specified, the Custom Sound is used.
+
+![Pushover Action Screenshot - Shows how to add the action to a macro. Fields shown are Priority (drop-down picker), Title, Notification Message, URL Title, URL, Image Attachment, Notification Sound (drop-down picker), Custom Sound](docs/PushoverNotificationAction.png)
 
 ## Known Issues
-- None at this time
+- Sending messages in plain text instead of HTML not supported.
+- Setting a custom time not supported.
 
 ## Thanks
 - Thanks to GitHub user [trych](https://github.com/trych) for fixing a bunch of stuff a long time ago and letting people on the Keyboard Maestro forum know about it.
