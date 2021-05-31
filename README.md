@@ -51,6 +51,9 @@ for more information on acceptable HTML commands.
 ## Known Issues
 - None at this time
 
+## Thanks
+- Thanks to GitHug user [trych](https://github.com/trych) for fixing a bunch of stuff a long time ago and letting people on the Keyboard Maestro forum know about it.
+
 ## Change Log
 - 2021-05-30
 	- Changed URL entry to Keyboard Maestro "TokenString" so it appears in UI as a single line instead of multi-line text.
