@@ -10,12 +10,15 @@
 	<string>PushoverIcon.png</string>
 	<key>Title</key>
 	<string>Send a notification via Pushover</string>
+	<key>Timeout</key>
+	<!-- 5 minute timeout for this plug-in -->
+	<string>300</string>
 	<key>Results</key>
 	<string>None|Window</string>
 	<key>Author</key>
 	<string>Kevin van Haaren [gh@kvmsg.com]</string>
 	<key>URL</key>
-	<string>https://www.vanhaaren.net/</string>
+	<string>https://github.com/kvanh/Keyboard-Maestro-Pushover-Notifications</string>
 	<key>Help</key>
 	<string>Select a priority, enter a title, set the HTML formatted notification message. Make sure the PushoverNotification.scpt file contains your Pushover user and application tokens.</string>
 	<key>Parameters</key>
@@ -36,7 +39,7 @@
 			<key>Type</key>
 			<string>TokenString</string>
 			<key>Default</key>
-			<string>Notification Title</string>
+			<string>Keyboard Maestro Notification</string>
 		</dict>
 		<dict>
 			<key>Label</key>
@@ -58,9 +61,17 @@
 			<key>Label</key>
 			<string>URL</string>
 			<key>Type</key>
-			<string>TokenText</string>
+			<string>TokenString</string>
 			<key>Default</key>
 			<string>Optional URL to send with message.</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Image Attachment</string>
+			<key>Type</key>
+			<string>TokenString</string>
+			<key>Default</key>
+			<string>Optional path to file attachment.</string>
 		</dict>
 		<dict>
 			<key>Label</key>
@@ -71,7 +82,15 @@
 			<string>User Default</string>
 			<key>Menu</key>
 			<!-- Verify these are up to date at the Pushover API website -->
-			<string>User Default|Pushover|Bike|Bugle|Cash Register|Classical|Cosmic|Falling|Gamelan|Incoming|Intermission|Magic|Mechanical|Piano Bar|Siren|Space Alarm|Tug Boat|Alien Alarm|Climb|Persistent|Pushover Echo|Up Down|None</string>
+			<string>User Default|Pushover|Bike|Bugle|Cash Register|Classical|Cosmic|Falling|Gamelan|Incoming|Intermission|Magic|Mechanical|Piano Bar|Siren|Space Alarm|Tug Boat|Alien Alarm|Climb|Persistent|Pushover Echo|Up Down|Vibrate|None</string>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Custom Sound</string>
+			<key>Type</key>
+			<string>TokenString</string>
+			<key>Default</key>
+			<string>Optional name of custom sound.</string>
 		</dict>
 	</array>
 </dict>
