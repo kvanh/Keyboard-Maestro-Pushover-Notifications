@@ -36,8 +36,11 @@ information on creating an application token.
 
 - Reload both Keyboard Maestro and the Keyboard Maestro engine.
 	- either by quitting/relaunching them or using Applescript:
-        tell application "Keyboard Maestro" to reload
-        tell application "Keyboard Maestro Engine" to reload
+
+```	
+	tell application "Keyboard Maestro" to reload
+	tell application "Keyboard Maestro Engine" to reload
+```
 
 ## Usage
 Add "Pushover Notification" action from the "Third Party Plug Ins" action category to your macro.
