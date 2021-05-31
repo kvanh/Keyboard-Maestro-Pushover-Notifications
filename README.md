@@ -15,8 +15,11 @@ information on creating an application token.
 - Copy the files into the folder
 - _Edit the PushoverNotification.scpt file_
 - Insert your Pushover User Key where indicated in the line (between the quote marks):
+
         set PO_UserKey to "INSERT_USER_KEY_HERE"
+
 - Insert your Pushover Application API Key where indicated in the line (between the quote marks):
+
         set PO_UserKey to "INSERT_API_TOKEN_HERE"
 
 ## Upgrading
@@ -24,9 +27,13 @@ information on creating an application token.
 - Overwrite all the files in the Keyboard Maestro Actions/Pushover Notifications folder
 - _Edit the PushoverNotification.scpt file_
 - Insert your Pushover User Key where indicated in the line (between the quote marks):
+
         set PO_UserKey to "INSERT_USER_KEY_HERE"
+
 - Insert your Pushover Application API Key where indicated in the line (between the quote marks):
+
         set PO_UserKey to "INSERT_API_TOKEN_HERE"
+
 - Reload both Keyboard Maestro and the Keyboard Maestro engine.
 	- either by quitting/relaunching them or using Applescript:
         tell application "Keyboard Maestro" to reload
