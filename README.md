@@ -9,7 +9,8 @@ Pushover's documentation on [registering an application](https://pushover.net/ap
 information on creating an application token.
 
 ## Installation
-- If it does not already exist, create the folder "~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions"
+- Browse to the folder "~/Library/Application Support/Keyboard Maestro/Keyboard Maestro Actions"
+	- If it does not already exist, create it
 - Create the folder "Pushover Notifications" in the Keyboard Maestro Actions folder
 - Copy the files into the folder
 - _Edit the PushoverNotification.scpt file_
