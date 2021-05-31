@@ -73,6 +73,8 @@ to a new or existing macro by:
 - Thanks to GitHub user [trych](https://github.com/trych) for fixing a bunch of stuff a long time ago and letting people on the Keyboard Maestro forum know about it.
 
 ## Change Log
+- 2021-05-31
+	- Fixed issue in retrieving multi-line Keyboard Maestro variables. Changed from using do shell script "echo $KMPARAM_xxx" to do shell script "printenv KMPARAM_xxx"
 - 2021-05-30
 	- Changed URL entry to Keyboard Maestro "TokenString" so it appears in UI as a single line instead of multi-line text.
 	- Added support for Pushover custom sounds. Upload a custom sound to Pushover, then use it here.
