@@ -53,7 +53,7 @@
 			<key>Label</key>
 			<string>URL Title</string>
 			<key>Type</key>
-			<string>TokenText</string>
+			<string>TokenString</string>
 			<key>Default</key>
 			<string>Optional title used for URL.</string>
 		</dict>

@@ -25,7 +25,7 @@ information on creating an application token.
 ## Upgrading
 - Copy your current User Key and API Token from the current PushoverNotification.scpt Applescript
 - Overwrite all the files in the Keyboard Maestro Actions/Pushover Notifications folder
-- _Edit the PushoverNotification.scpt file_
+- __Edit the PushoverNotification.scpt file__
 - Insert your Pushover User Key where indicated in the line (between the quote marks):
 
         set PO_UserKey to "INSERT_USER_KEY_HERE"
@@ -62,6 +62,7 @@ for more information on acceptable HTML commands.
 	- Fixed issue if optional entries were shorter than the default value returned from Keyboard Maestro
 		- Applescript will error out on "text 1 thru 14 of stringValue" if stringValue is shorter than 14 characters
 		- fix by using "text 1 thru end of stringValue"
+	- Fixed issue where double-quotes or backtics in a field caused incomplete notification to be sent.
 	- Added new(ish) sound selection "Vibrate"
 	- Fixed issue where sound selection wouldn't work if not in lower case and no spaces
 		- Also "Pushover Echo" is just "echo" in the API and "Alien Alarm" is just "alien"
@@ -73,5 +74,7 @@ for more information on acceptable HTML commands.
 			- Make sure the file exists and is passed on the command line in an appropriate quoted fashion
 			- Pushover specifically only allows image attachments so this restricts to files with extensions jpg, jpeg, png, and gif.
 			- Max file size allowed is (as of 2021-05-30) 2,621,440 bytes
-		- _NOTE:_ Because this code actually examines the file size and file extension of the file you may trigger macOS privacy protections
+		- **NOTE:** Because this code actually examines the file size and file extension of the file you may trigger macOS privacy protections
 		  and be asked to approve access to the file location. If you don't attach files, this security notice won't trigger.
+	- Fixed issue where emoji and international characters would not work properly
+
