@@ -49,7 +49,7 @@ The Notification Message can use basic HTML formatting. See the [Pushover API do
 for more information on acceptable HTML commands.
 
 ## Known Issues
-- 
+- None at this time
 
 ## Change Log
 - 2021-05-30
