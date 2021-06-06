@@ -73,6 +73,9 @@ to a new or existing macro by:
 - Thanks to GitHub user [trych](https://github.com/trych) for fixing a bunch of stuff a long time ago and letting people on the Keyboard Maestro forum know about it.
 
 ## Change Log
+- 2021-06-05
+	- Fixed issue where the ampersand character in HTML entities was itself being changed to an HTML entity. Send emoji or special characters as HTML entities works again.
+	- Added a release folder with a zip of just the files needed for the plug-in
 - 2021-05-31
 	- Fixed issue in retrieving multi-line Keyboard Maestro variables. Changed from using do shell script "echo $KMPARAM_xxx" to do shell script "printenv KMPARAM_xxx"
 - 2021-05-30
