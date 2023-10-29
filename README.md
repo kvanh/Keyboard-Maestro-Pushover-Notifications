@@ -1,8 +1,8 @@
 # NOTICE: This plug-in is deprecated!
 
-As of Keyboard Maestro 11 there is a (built-in Send Pushover Notification action)[https://wiki.keyboardmaestro.com/action/Send_Pushover_Notification]. This supports more of the API than this plug-in does and has better support. Highly recommend updating to (Keyboard Maestro 11!)[https://www.keyboardmaestro.com/main/]
+As of Keyboard Maestro 11 there is a [built-in Send Pushover Notification action](https://wiki.keyboardmaestro.com/action/Send_Pushover_Notification). This supports more of the API than this plug-in does and has better support. Highly recommend updating to [Keyboard Maestro 11!](https://www.keyboardmaestro.com/main/)
 
-(Keyboard Maestro What's New?)[https://wiki.keyboardmaestro.com/manual/Whats_New]
+[Keyboard Maestro What's New?](https://wiki.keyboardmaestro.com/manual/Whats_New)
 
 # Keyboard-Maestro-Pushover-Notifications
 
